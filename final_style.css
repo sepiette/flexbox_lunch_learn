@@ -1,0 +1,99 @@
+html {
+  background-color: #efefef;
+}
+body{
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  font-family: Arial;
+
+}
+
+#main {
+  display: flex;
+  flex-flow: row wrap;
+  overflow: hidden;
+  position: relative;
+}
+
+#banner {
+  flex: 1 0 100%;
+  height: 300px;
+  position: relative;
+  color: #fff;
+  z-index: 900;
+}
+
+#banner h1 {
+  margin: 180px 0 0 20px;
+}
+#banner > * {
+  margin-left: 20px;
+}
+
+#banner:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background: #000 url('./images/blt-mac.jpg') no-repeat fixed left top;
+  background-size: 100%;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+#banner:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background: rgba(0,0,0,0.5);
+  top: 0;
+  left: 0;
+  z-index: -5;
+}
+.nutrition {
+  flex: 1 0 33%;
+  color: #fff;
+  text-align: center;
+}
+
+.nutrition:nth-child(odd){
+  background-color: #333;
+}
+.nutrition:nth-child(even){
+  background-color: #555;
+}
+
+#ingredients_list {
+  flex: 1 0 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#ingredients_list h1, #ingredients_list p {
+  flex: 1 0;
+  padding: 0 30px;
+}
+
+#ingredients_list p {
+  margin-top: 36px;
+  text-align: right;
+}
+
+#ingredients_list ul {
+  list-style-type: none;
+  display: flex;
+  flex: 1 0 100%;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+
+#ingredients_list ul li {
+  display: block;
+  padding: 20px;
+  margin-left: -40px;
+}
+#ingredients_list ul li:nth-child(odd){
+  background-color: #eeeeee;
+}
