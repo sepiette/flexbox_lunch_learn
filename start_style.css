@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.flex-container {
+  text-align: center;
+}
+
+.profile {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #000;
+  color: #fff;
+  text-transform: capitalize;
+  border: 3px solid #fff;
+  height: 300px;
+}
+.profile:last-of-type{
+  border: 3px 0 0 0 #fff;
+}
+
+.profile h1, .profile h3 {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#top_profile {
+  height: 400px;
+  background-image: url('images/lightning.jpg');
+}
+
+#snowy_mountains {
+  background-image: url('images/snowy_mountains.jpg');
+}
+
+#palm_trees {
+  background-image: url('images/palm_trees.jpeg');
+}
+
+#railroad {
+  background-image: url('images/railroad.jpg');
+}
+#rock_ocean {
+  background-image: url('images/rock_ocean.jpg');
+}
+
+#ship {
+  background-image: url('images/ship.jpg');
+}
+
+#snowy_house {
+  background-image: url('images/snow_house.jpg');
+}
+
+#trees {
+  background-image: url('images/trees.jpg');
+}
+
+footer {
+  margin: 0;
+  padding: 20px;
+  background: #ccc;
+}
+footer h3 {
+  margin: 0;
+}
+footer ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+footer ul li {
+  padding: 5px 0;
+}
+footer div {
+  flex: 0 1 30%;
+}
+footer #navigate {
+}
+footer #social {
+}
+
+@media only screen and (max-width:767px){
+  footer {
+  }
+  
+  footer div:last-of-type {
+    border-bottom: 1px solid #888;
+  }
+}
